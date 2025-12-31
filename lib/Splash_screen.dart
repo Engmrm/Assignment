@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'Homepage.dart';
+import 'package:untitled1/Login.dart';
 
 class splash extends StatefulWidget {
   @override
@@ -13,7 +14,7 @@ class _splashState extends State<splash> {
   void initState() {
     // TODO: implement initState
     Future.delayed(Duration(seconds: 3),(){
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomePage()));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>LoginPage()));
     });
   }
   Widget build(BuildContext context) {
